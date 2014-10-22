@@ -435,13 +435,13 @@ body {
 	vertical-align: bottom;
 }
 .product_heading_bg {
-	background: none repeat scroll 0 0 #252527;
+	background: rgba(0,0,0,0.8);
     clear: both;
     color: #fff;
     float: right;
     margin-bottom: 15px;
     overflow: hidden;
-    padding: 8px 20px;
+    padding: 10px;
 }
 .product_heading_bg:nth-last-of-type(1) {
  	margin:0;
@@ -474,7 +474,12 @@ body {
 	color:#ffffff;
 	text-decoration:none;
 	display:block;
-	padding:6px
+	padding:6px;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+}
+.linklist li a:hover{
+	background: #298e4f;
 }
 .product_btn {
 	display: table-cell;
@@ -502,6 +507,12 @@ body {
 .block_container h3, .block_container h4, .block_container h5 {
 	font-size: 20px;
 	padding-bottom: 25px;
+}
+.block_container h4 {
+	font-size: 18px;
+}
+.block_container h5 {
+	font-size: 16px;
 }
 .block_container p {
 	font-size: 16px;
@@ -796,12 +807,15 @@ button.close {
 	color:#252429;
 	opacity:0.7;
 	-webkit-appearance: none;
+	background:rgba(244,244,244,0.5);
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
 }
 .close:hover, .close:focus {
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
-	background:#009966;
+	background:#237c44;
 }
 
 .modal-open {
@@ -871,15 +885,16 @@ button.close {
 .modal-header {
 	border-bottom: 1px solid #e5e5e5;
 	min-height: 16.42857143px;
+	background:#2c9654;
 }
 .modal-title {
 	margin: 0;
-	color: #009966;
 	font-size: 30px;
-	width: 95%;
+	font-family:'light', arial
 }
 .modal-body {
 	position: relative;
+	padding:0;
 }
 .modal_lexicon {
 	padding:25px;
@@ -960,23 +975,22 @@ button.close {
 	background:none;
 	box-shadow: 0 0 0;
 }
-/*.bx-wrapper .spacer_s_all {
+.bx-wrapper .spacer_s_all {
 	padding: 25px 80px;
-}*/
- .bx-wrapper .spacer_s_all {
- padding: 15px 10px;
 }
 .bx-wrapper .bx-controls-direction a {
-	background: none repeat scroll 0 0 #ccc;
+	background: rgba(244,244,244,0.5);
     font-size: 0;
     height: 70px;
     margin-top: -17px;
-    opacity: 0.2;
     text-decoration: none;
     text-indent: 0;
     width: 45px;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
+}
+.bx-wrapper .bx-controls-direction a:hover{
+	background:#00935d;
 }
 .bx-wrapper .bx-controls-direction a:before {
 	-moz-osx-font-smoothing: grayscale;
@@ -993,14 +1007,14 @@ button.close {
     text-transform: none;
     top: 22px;
 }
+.bx-wrapper .bx-controls-direction a:hover:before{
+	color:#fff;
+}
 .bx-wrapper .bx-next {
 	right:0;
 }
 .bx-wrapper .bx-next:before {
 	content: "\e642";
-}
-.bx-wrapper .bx-next:hover {
-	opacity: 0.7;
 }
 .bx-wrapper .bx-prev {
 	left:0;
@@ -1008,11 +1022,11 @@ button.close {
 .bx-wrapper .bx-prev:before {
 	content: "\e641";
 }
-.bx-wrapper .bx-prev:hover {
-	opacity: 0.7;
+.bx-wrapper .bx-pager.bx-default-pager a{
+	background:#d2d3d5;
 }
-.bx-pager.bx-default-pager {
-    opacity: 0.4;
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background:#00935d;
 }
 
 /* top5 list*/
@@ -1249,8 +1263,14 @@ button.close {
  .block_container h2 {
  font-size: 26px;
 }
- .block_container h3, .block_container h4, .block_container h5 {
+ .block_container h3 {
  font-size: 18px;
+}
+.block_container h4 {
+ font-size: 16px;
+}
+ .block_container h5 {
+ font-size: 15px;
 }
  .block_container p, .legal_block .block_inner p, .lnk_primary.fontcon-faq-active {
  font-size: 13px;
