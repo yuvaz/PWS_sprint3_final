@@ -1028,7 +1028,7 @@
               <h2>Frequently Asked Questions</h2>
               <div class="faq_block_inner">
                 <div data-toggle="modal" data-target="#modal_faq1" class=""> <a href="javascript:void(0);" class="lnk_primary fontcon-faq-active">Lorem Ipsum is simply dummy text of the printing</a></div>
-                <div data-toggle="modal" data-target="#modal_faq2" class=""> <a href="javascript:void(0);" class="lnk_primary fontcon-faq-active">like Aldus PageMaker including versionslike Aldus PageMaker including versions</a></div>
+                <div data-toggle="modal" data-target="#myModal1" class=""> <a href="javascript:void(0);" class="lnk_primary fontcon-faq-active">like Aldus PageMaker including versionslike Aldus PageMaker including versions</a></div>
                 <div><a href="#" class="lnk_primary fontcon-faq-active">galley of type and scrambled it to make a type specimen book</a></div>
                 <div><a href="#" class="lnk_primary fontcon-faq-active">electronic typesetting, remaining essentially unchanged</a></div>
                 <div><a href="#" class="lnk_primary fontcon-faq-active">Lorem Ipsum is simply dummy text of the printing</a></div>
@@ -1068,8 +1068,8 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+        <button type="button" class="close fontcon-close-thin" data-dismiss="modal"></button>
           <div class="modal-header spacer_s_all">
-            <button type="button" class="close fontcon-close-thin" data-dismiss="modal"></button>
             <h4 class="modal-title">Modal title</h4>
           </div>
           <div class="modal-body">
@@ -1080,9 +1080,8 @@
     </div>
     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content"><button type="button" class="close fontcon-close-thin" data-dismiss="modal"></button>
           <div class="modal-header spacer_s_all">
-            <button type="button" class="close fontcon-close-thin" data-dismiss="modal"></button>
             <h4 class="modal-title" id="1myModalLabel">Lorem Ipsum is simply dummy te printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
           </div>
           <div class="modal-body">
@@ -1194,7 +1193,7 @@
 								"lessText"  : "Less",
 							});
 						}
-						if(width <= 767){
+						if(width <= 1023){
 						if (fourCarouselMedium) {
 								fourCarouselMedium.destroySlider();
 							}
